@@ -1,0 +1,23 @@
+.button {
+  background: rgb(0,176,255);
+background: radial-gradient(circle, rgba(0,176,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,176,255,1) 100%);
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+private void butt(object sender, EventArgs e) //mousemove
+        {
+            Button button = (Button)sender;
+            button.ForeColor = Color.White;
+            button.BackColor = Color.Purple;
+        }
+        private void butt(object sender, MouseEventArgs e) //mouseleave
+        {
+            Button button = (Button)sender;
+            button.ForeColor = Color.Black;
+            button.BackColor = Color.Transparent;
+        }
